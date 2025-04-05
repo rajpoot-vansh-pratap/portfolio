@@ -2,335 +2,138 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vansh Pratap Rajpoot | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <meta name="description" content="Vansh Pratap Rajpoot | Full Stack Developer Portfolio with Laravel, Odoo, and Product Customization Projects.">
-<meta name="keywords" content="Full Stack Developer, Laravel, Odoo, PHP, Web Developer Portfolio, Vansh Rajpoot">
-<meta name="author" content="Vansh Pratap Rajpoot">
-
-  <style>
-  
-   html {
-    scroll-behavior: smooth;
-  }
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      color: #333;
-      background-color: #f8f9fa;
-      line-height: 1.6;
-    }
-
-    a {
-      text-decoration: none;
-      color: #0077cc;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    header {
-      background-color: #ffffff;
-      border-bottom: 1px solid #ddd;
-      padding: 1rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 960px;
-      margin: 0 auto;
-      flex-wrap: wrap;
-    }
-
-    .nav-left {
-      display: flex;
-      flex-direction: column;
-    }
-
-    nav h1 {
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin: 0;
-    }
-
-    nav h5 {
-      font-weight: 400;
-      margin: 0;
-      color: #555;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li {
-      font-weight: 500;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 4rem 2rem;
-      background-color: #e9ecef;
-    }
-
-    .hero .highlight {
-      color: #0077cc;
-    }
-
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    section {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 2rem;
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .project-list {
-      display: grid;
-      gap: 1.5rem;
-    }
-
-    .project-card {
-      background-color: #ffffff;
-      border: 1px solid #ddd;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.03);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .project-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    }
-
-    #contact ul {
-      padding-left: 1rem;
-    }
-
-    #contact li {
-      margin-bottom: 0.5rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      background-color: #f1f3f5;
-      border-top: 1px solid #ddd;
-    }
-
-    ul {
-      list-style: disc;
-      padding-left: 1.5rem;
-    }
-
-    /* Certifications Section */
-    #certifications {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 0 2rem;
-    }
-
-    .cert-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .cert-card {
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-      overflow: hidden;
-      text-align: center;
-    }
-
-    .cert-card img {
-  width: 100%;
-  height: 200px; /* Fixed height for all images */
-  object-fit: cover; /* Maintain aspect ratio and crop if necessary */
-  display: block;
-}
-
-
-    .cert-card p {
-      padding: 0.75rem;
-      font-weight: 500;
-      background-color: #f8f9fa;
-      margin: 0;
-    }
-
-    @media (max-width: 600px) {
-      nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
-      }
-
-      .hero h2 {
-        font-size: 2rem;
-      }
-    }
-	.profile-pic {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1rem;
-  border: 3px solid #0077cc;
-}
-  </style>
+  <meta name="keywords" content="Full Stack Developer, Laravel, Odoo, PHP, Web Developer Portfolio, Vansh Rajpoot">
+  <meta name="author" content="Vansh Pratap Rajpoot">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <nav>
-      <div class="nav-left">
-        <h1>Vansh Pratap Rajpoot</h1>
-        <h5>Full Stack Web Developer</h5>
+<body class="bg-gray-50 text-gray-800 font-inter">
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div>
+        <h1 class="text-2xl font-bold">Vansh Pratap Rajpoot</h1>
+        <p class="text-sm text-gray-600">Full Stack Web Developer</p>
       </div>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        
-        <li><a href="#certifications">Certifications</a></li>
-		<li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+      <nav>
+        <ul class="flex space-x-6 font-medium text-gray-700">
+          <li><a href="#about" class="hover:text-blue-600">About</a></li>
+          <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
+          <li><a href="#certifications" class="hover:text-blue-600">Certifications</a></li>
+          <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+          <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-  <img src="profile_2.jpeg" alt="Vansh Pratap Rajpoot" class="profile-pic">
-  <h2>Hello, I'm <span class="highlight">Vansh Pratap Rajpoot</span></h2>
-  <p>I'm a passionate developer who loves building beautiful and functional web applications.</p>
-</section>
-
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a web developer with a strong foundation in HTML, CSS, JavaScript, and modern frameworks. I enjoy turning complex problems into simple, beautiful, and intuitive designs.</p>
+  <section class="bg-gradient-to-r from-blue-100 to-white text-center py-16 px-4">
+    <img src="profile_2.jpeg" alt="Vansh Pratap Rajpoot" class="w-36 h-36 mx-auto rounded-full border-4 border-blue-500 mb-4 object-cover">
+    <h2 class="text-4xl font-bold mb-2">Hello, I'm <span class="text-blue-600">Vansh Pratap Rajpoot</span></h2>
+    <p class="text-lg max-w-2xl mx-auto">I'm a passionate developer who loves building beautiful and functional web applications.</p>
   </section>
 
-  <section id="skills">
-    <h2>Skills & Experience</h2>
-    <p>With over <strong>4.5 years of hands-on experience</strong> in full stack web development at <strong>Baseline IT Development, Mohali</strong>, I specialize in building robust, scalable, and high-performance web applications. My focus is always on writing clean, maintainable code and delivering seamless user experiences.</p>
-
-    <h3>Core Skills</h3>
-    <ul>
-      <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript (Vanilla & Libraries)</li>
-      <li><strong>Backend:</strong> PHP, Laravel, Python</li>
-      <li><strong>ERP Systems:</strong> Odoo (custom modules, backend logic, web controllers)</li>
-      <li><strong>Frameworks & Tools:</strong> Laravel, Bootstrap, jQuery</li>
-      <li><strong>Database:</strong> MySQL, PostgreSQL</li>
-      <li><strong>Version Control:</strong> Git, GitHub</li>
-      <li><strong>Deployment:</strong> GitHub Pages, cPanel, VPS Hosting</li>
-    </ul>
-
-    <h3>Professional Summary</h3>
-    <p>Throughout my journey as a Full Stack Developer, I've successfully delivered various projects — from dynamic websites and APIs to complex business applications integrated with Odoo. I take pride in crafting clean UI, efficient backend systems, and tailoring solutions to meet client needs with precision.</p>
+  <section id="about" class="max-w-5xl mx-auto px-4 py-12">
+    <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+    <p class="text-lg">I am a web developer with a strong foundation in HTML, CSS, JavaScript, and modern frameworks. I enjoy turning complex problems into simple, beautiful, and intuitive designs.</p>
   </section>
-  
-  <section id="certifications">
-    <h2>Certifications & Awards</h2>
-    <div class="cert-grid">
-      <div class="cert-card">
-        <img src="1.jpeg" alt="Certificate 1">
-        <p>Employee of the Year 2024</p>
-      </div>
-      <div class="cert-card">
-        <img src="3.jpeg" alt="Certificate 2">
-        <p>Best Innovation 2024</p>
-      </div>
-      <div class="cert-card">
-        <img src="6.jpeg" alt="Certificate 3">
-        <p>Employee of the Year 2023</p>
-      </div>
-      <div class="cert-card">
-        <img src="5.jpeg" alt="Certificate 4">
-        <p>Employee of the Year 2022</p>
+
+  <section id="skills" class="bg-white py-12 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-6">Skills & Experience</h2>
+      <p class="mb-6 text-lg">With over <strong>4.5 years of hands-on experience</strong> in full stack web development at <strong>Baseline IT Development, Mohali</strong>, I specialize in building robust, scalable, and high-performance web applications.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript (Vanilla & Libraries)</li>
+          <li><strong>Backend:</strong> PHP, Laravel, Python</li>
+          <li><strong>ERP Systems:</strong> Odoo (custom modules, backend logic, web controllers)</li>
+          <li><strong>Frameworks & Tools:</strong> Laravel, Bootstrap, jQuery</li>
+        </ul>
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong>Database:</strong> MySQL, PostgreSQL</li>
+          <li><strong>Version Control:</strong> Git, GitHub</li>
+          <li><strong>Deployment:</strong> GitHub Pages, cPanel, VPS Hosting</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <section id="projects">
-  <h2>Projects</h2>
-  <div class="project-list">
-	<div class="project-card">
-	  <h3>The Sublimation Station</h3>
-	  <p><strong>Website:</strong> <a href="https://thesublimationstation.com" target="_blank">thesublimationstation.com</a></p>
-	  <iframe src="https://thesublimationstation.com" width="100%" height="400" style="border:1px solid #ccc; border-radius: 8px;" loading="lazy"></iframe>
-	  <p>3D product customization platform with real-time design preview and advanced rendering features.</p>
-	</div>
-    <div class="project-card">
-	  <h3>Melanin Coaster Networkts</h3>
-	  <p><strong>Website:</strong> <a href="https://www.melanincoasternetworktss.com" target="_blank">melanincoasternetworktss.com</a></p>
-	  <iframe src="https://www.melanincoasternetworktss.com" width="100%" height="400" style="border:1px solid #ccc; border-radius: 8px;" loading="lazy"></iframe>
-	  <p>Ecommerce Website for with Product Customizer.</p>
-	</div>
-	
-	<div class="project-card">
-	  <h3>My Power AI</h3>
-	  <p><strong>Website:</strong> <a href="https://my-powerai.com.au" target="_blank">my-powerai.com.au</a></p>
-	  <iframe src="https://my-powerai.com.au" width="100%" height="400" style="border:1px solid #ccc; border-radius: 8px;" loading="lazy"></iframe>
-	  <p>A powerful automation platform built to help users visually create and manage complex workflows. 
-    My Power AI functions similarly to tools like <strong>Zapier</strong> and <strong>Make.com</strong>, allowing seamless integration of APIs, custom actions, and conditional logic. 
-    Designed for both technical and non-technical users to streamline business operations through drag-and-drop flow management.</p>
-	</div>
-	
-	<div class="project-card">
-  <h3>JS Health Vitamins</h3>
-  <p><strong>Website:</strong> <a href="https://jshealthvitamins.com" target="_blank">jshealthvitamins.com</a></p>
-  <img src="p2.png" width="100%" height="400" style="border:1px solid #ccc; border-radius: 8px;" loading="lazy">
-  <p>A health and wellness ecommerce platform offering a wide range of vitamin supplements and skin products. 
-  This site features a unique <strong>Live Face Test</strong> functionality, allowing users to receive personalized treatment recommendations based on facial analysis. 
-  Built with performance and UX in mind, it supports subscription models, secure checkouts, and seamless user interaction.</p>
-</div>
-
-	
-	
-    
-  </div>
-</section>
-
-  
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Feel free to reach out!</p>
-    <ul>
-      <li>Email: <a href="mail:rajpoot.work21@gmail.com">rajpoot.work21@gmail.com</a></li>
-      <li>Phone: 7464810176</li>
-
-    </ul>
+  <section id="certifications" class="py-12 bg-gray-100 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-6">Certifications & Awards</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="bg-white rounded-lg shadow">
+          <img src="1.jpeg" alt="Certificate 1" class="w-full h-48 object-cover rounded-t-lg">
+          <p class="p-3 text-center font-medium">Employee of the Year 2024</p>
+        </div>
+        <div class="bg-white rounded-lg shadow">
+          <img src="3.jpeg" alt="Certificate 2" class="w-full h-48 object-cover rounded-t-lg">
+          <p class="p-3 text-center font-medium">Best Innovation 2024</p>
+        </div>
+        <div class="bg-white rounded-lg shadow">
+          <img src="6.jpeg" alt="Certificate 3" class="w-full h-48 object-cover rounded-t-lg">
+          <p class="p-3 text-center font-medium">Employee of the Year 2023</p>
+        </div>
+        <div class="bg-white rounded-lg shadow">
+          <img src="5.jpeg" alt="Certificate 4" class="w-full h-48 object-cover rounded-t-lg">
+          <p class="p-3 text-center font-medium">Employee of the Year 2022</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Vansh Pratap Rajpoot. All rights reserved.</p>
+  <section id="projects" class="py-12 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-6">Projects</h2>
+      <div class="grid gap-8 md:grid-cols-2">
+        <!-- Project Template -->
+        <div class="bg-white rounded-lg border shadow p-4">
+          <h3 class="text-xl font-semibold mb-2">The Sublimation Station</h3>
+          <a href="https://thesublimationstation.com" target="_blank" class="text-blue-600">thesublimationstation.com</a>
+           <iframe src="https://thesublimationstation.com" width="100%" height="400" class="mt-3 rounded-md shadow" style="border:1px solid #ccc; border-radius: 8px;" loading="lazy"></iframe>
+          <p class="mt-2 text-gray-700">3D product customization platform with real-time design preview and advanced rendering features.</p>
+        </div>
+
+        <div class="bg-white rounded-lg border shadow p-4">
+          <h3 class="text-xl font-semibold mb-2">Melanin Coaster Networkts</h3>
+          <a href="https://www.melanincoasternetworktss.com" target="_blank" class="text-blue-600">melanincoasternetworktss.com</a>
+          <iframe src="https://www.melanincoasternetworktss.com" width="100%" height="400" class="mt-3 rounded-md shadow" style="border:1px solid #ccc; border-radius: 8px;" loading="lazy"></iframe>
+          <p class="mt-2 text-gray-700">Ecommerce Website with Product Customizer.</p>
+        </div>
+
+        <div class="bg-white rounded-lg border shadow p-4">
+          <h3 class="text-xl font-semibold mb-2">My Power AI</h3>
+          <a href="https://my-powerai.com.au" target="_blank" class="text-blue-600">my-powerai.com.au</a>
+          <iframe src="https://my-powerai.com.au" width="100%" height="400" class="mt-3 rounded-md shadow" style="border:1px solid #ccc; border-radius: 8px;" loading="lazy"></iframe>
+          <p class="mt-2 text-gray-700">Visual automation platform with Zapier-like workflow builder, custom actions, and integrations.</p>
+        </div>
+
+        <div class="bg-white rounded-lg border shadow p-4">
+          <h3 class="text-xl font-semibold mb-2">JS Health Vitamins</h3>
+          <a href="https://jshealthvitamins.com" target="_blank" class="text-blue-600">jshealthvitamins.com</a>
+          <img src="p2.png" alt="JS Health Vitamins"  height="400" width="100%" style="height: 400px;" class="mt-3 rounded-md shadow">
+          <p class="mt-2 text-gray-700">Ecommerce platform with Live Face Test for personalized skincare and supplement recommendations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-12 bg-blue-50 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-4">Contact</h2>
+      <p class="mb-4">Feel free to reach out!</p>
+      <ul class="space-y-2">
+        <li>Email: <a href="mailto:rajpoot.work21@gmail.com" class="text-blue-600">rajpoot.work21@gmail.com</a></li>
+        <li>Phone: 7464810176</li>
+        <li>WhatsApp: 7464810176</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="text-center text-sm text-gray-500 py-6 border-t">
+    &copy; 2025 Vansh Pratap Rajpoot. All rights reserved.
   </footer>
 </body>
 </html>
